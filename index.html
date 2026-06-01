@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cidade Sustentável</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏙️ Cidade Sustentável</h1>
+    <p>Administre sua cidade e alcance 100 pontos de sustentabilidade.</p>
+</header>
+
+<div class="container">
+
+    <div class="status">
+        <h2>Pontuação</h2>
+        <h1 id="score">50</h1>
+    </div>
+
+    <div class="card">
+        <h2>⚡ Energia</h2>
+        <p>Nível atual: <span id="energia">50</span>%</p>
+        <button onclick="melhorarEnergia()">Instalar Energia Solar</button>
+    </div>
+
+    <div class="card">
+        <h2>♻️ Reciclagem</h2>
+        <p>Nível atual: <span id="reciclagem">50</span>%</p>
+        <button onclick="melhorarReciclagem()">Criar Programa de Reciclagem</button>
+    </div>
+
+    <div class="card">
+        <h2>🚌 Transporte</h2>
+        <p>Nível atual: <span id="transporte">50</span>%</p>
+        <button onclick="melhorarTransporte()">Investir em Transporte Público</button>
+    </div>
+
+    <div class="card">
+        <h2>💧 Água</h2>
+        <p>Nível atual: <span id="agua">50</span>%</p>
+        <button onclick="melhorarAgua()">Combater Desperdício</button>
+    </div>
+
+</div>
+
+<div class="resultado" id="resultado">
+    Sua cidade está em desenvolvimento sustentável.
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
